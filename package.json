@@ -1,0 +1,41 @@
+{
+  "name": "u-map",
+  "version": "1.0.0",
+  "description": "统一地图接口库，支持谷歌地图和天地图",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite preview",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "map",
+    "google-maps",
+    "tianditu",
+    "amap"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/google.maps": "^3.58.1",
+    "@types/node": "^22.13.10",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1",
+    "vue-tsc": "^2.2.8"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "dependencies": {
+    "@types/leaflet": "^1.9.16",
+    "leaflet": "^1.9.4"
+  }
+}
